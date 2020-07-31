@@ -6,9 +6,29 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <style>
+body{
+	font-family: sans-serif;
+}
 .navbar{
 	display: flex;
 	justify-content: space-between;
+	margin: 16px 0px;
+}
+
+.navbar a{
+	padding: 0px 12px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.navbar a:hover{
+	color: grey;
+}
+
+.logo{
+	font-size: x-large;
+	font-weight: bolder;
+	cursor: pointer;
 }
 </style>
 </head>
