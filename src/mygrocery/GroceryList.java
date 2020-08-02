@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/grocerylist")
 public class GroceryList extends HttpServlet {
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setAttribute("name", "hello");
 		request.getRequestDispatcher("grocerylist.jsp").forward(request, response);
 	}
 
