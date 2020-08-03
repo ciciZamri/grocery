@@ -1,4 +1,4 @@
-package mygrocery;
+package routes;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -10,6 +10,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import mygrocery.*;
 
 @WebServlet("/main")
 public class Main extends HttpServlet {

@@ -1,4 +1,4 @@
-package mygrocery;
+package routes;
 
 import java.sql.ResultSet;
 import java.io.IOException;
@@ -7,6 +7,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import mygrocery.User;
 
 @WebServlet("/login")
 public class Login extends HttpServlet {
