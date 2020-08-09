@@ -1,5 +1,5 @@
 package mygrocery;
 
-public class GroceryList {
+public class MyGroceryList {
 	public void addTolist() {};
 }

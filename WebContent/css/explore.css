@@ -1,0 +1,32 @@
+h2{
+	width: fit-content;
+	margin: 24px auto;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container div{
+	margin: 8px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	cursor: pointer;
+	transition: 200ms;
+	display: grid;
+	place-items: center;
+}
+
+.container div:hover{
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+img{
+	width: 250px;
+}
+
+.container a{
+	text-decoration: none;
+	color: black;
+}

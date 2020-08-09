@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Grocery</title>
 <style>
 body{
 	font-family: sans-serif;
+	margin-left: 48px;
+	margin-right: 48px;
 }
 
 .error{
