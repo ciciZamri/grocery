@@ -5,7 +5,7 @@
 		<h2>Login</h2>
 		<label>Email</label><input type="text" name="email"><br>
 		<label>Password</label><input class="last" type="password" name="password"><br>
-		<% 
+		<%
 			String message = (String)request.getAttribute("message");
 			if(message != null){
 				out.print("<small class=\"error\">" + message + "</small>");
