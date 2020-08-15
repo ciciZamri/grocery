@@ -34,9 +34,9 @@ public class Explore extends HttpServlet {
 	}
 
 	private String[][] getCategories() {
-		String[][] categories = { { "Fruits", "images/placeholder.png" }, { "Vegetables", "images/placeholder.png" },
-				{ "Meats", "images/placeholder.png" }, { "Fish", "images/placeholder.png" },
-				{ "Herbs", "images/placeholder.png" }, { "Vegetables", "images/placeholder.png" } };
+		String[][] categories = { { "Fruits", "images/fruits.png" }, { "Vegetables", "images/vegetables.png" },
+				{ "Meats", "images/meats.png" }, { "Fish", "images/fishes.png" },
+				{ "Herbs", "images/herbs.png" }};
 		return categories;
 	}
 }

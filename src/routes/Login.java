@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import mygrocery.User;
 
@@ -30,6 +31,8 @@ public class Login extends HttpServlet {
 			for(String str: user_details) {
 				System.out.println(str);
 			}
+			HttpSession session = request.getSession(true);
+			session.setAttribute("is_logged_in", "true");
 			response.sendRedirect("/Grocery/grocerylist");
 		}
 	}

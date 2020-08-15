@@ -9,6 +9,11 @@
         	<div>
         		<img alt="image" src="<%= items[i][1] %>">
         		<p><%= items[i][0] %></p>
+        		<% 
+        			if(section.equals("groceryitem")){
+        				out.print("<a href=\"grocerylist?add=" + items[i][0] + "\"><button>Add to my list</button></a>");
+        			}
+        		%>
         	</div>
         </a>
     <%}%>

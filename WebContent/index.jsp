@@ -27,7 +27,6 @@ a{
 }
 </style>
 
-
 <img id="bg"src="images/grocery.jpg" alt="" >
 
   <div class="wrapper">
