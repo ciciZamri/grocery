@@ -1,0 +1,183 @@
+delete from groceryitems;
+
+insert into groceryitems (name, category, description)
+values ("banana", "fruits",
+"Did you know that some scientists believe that bananas can cure stomach ulcers? According to Dr David Lewis of the Pharmacy Department at Britain's Aston University, bananas contain an active ingredient claimed to be safer, gentler and 
+more effective than most drugs. But Dr. Lewis said that the bananas should be unripe and uncooked. 
+Cooking destroys curative properties. Now, if you don't have ulcers and don't like unripe bananas, do not dismiss bananas altogether.
+They are nutritious too. Why not take those that are delicious when ripe? Bananas are a good source of Vitamin A. 
+The pisang emas for example, contains as much as 70 mcg(micrograms) of the vitamin per 100 g. Most common varieties give about 50 mcg per 100 g.");
+
+insert into groceryitems (name, category, description)
+values ("guava", "fruits",
+"Talk about Vitamin C and you will probably think of the imported orange. That's not suprising because we 
+have heard a lot about the orange where Vitamin C is concerned. We all know that Vitamin C is good for us. 
+It gives us a clear complexion and helps our bodies resist infections. And many of us go for oranges because
+ we think that they are the best source of Vitamin C we can find. How many people actually give a second thought
+ to our local fruits? The jambu batu or guava, for instance? 
+Did you know that this humble fruit is a mine of Vitamin C, out-classing even the imported orange?");
+
+insert into groceryitems (name, category, description)
+values ("apple", "fruits",
+"An apple is a sweet, edible fruit produced by an apple tree (Malus pumila). Apple trees are cultivated
+ worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, 
+where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of 
+years in Asia and Europe and were brought to North America by European colonists. Apples have religious
+ and mythological significance in many cultures, including Norse,Greek and European Christian traditions. Generally, 
+apple cultivars are propagated by grafting onto rootstocks, which control the size of the resulting tree. 
+There are more than 7,500 known cultivars of apples, resulting in a range of desired characteristics.
+ Different cultivars are bred for various tastes and use, including cooking, eating raw and cider production.
+ Trees and fruit are prone to a number of fungal, bacterial and pest problems, which can be controlled by a number 
+of organic and non-organic means. In 2010, the fruit's genome was sequenced as part of research on disease control and 
+selective breeding in apple production.");
+
+insert into groceryitems (name, category, description)
+values ("mango", "fruits",
+"Mango-the mere mention of this fruit will make many mouths water. This is hardly suprising for the mango
+ is sweet and juicy. It is no wonder this fruit is very popular among many Malaysians. Also known as the 'tropical apple', 
+the mango comes in many different varieties. However, locally available mangoes which are mainly yellow in colour and flushed with red, 
+are imported from Thailand, Burma and India. The most popular variety is the Indian mango.");
+
+
+insert into groceryitems (name, category, description)
+values ("salmon", "fish",
+"Salmon varieties are usually classified by the ocean in which they are located. 
+In the Pacific they are considered part of the genus Oncorhynchus, and in the Atlantic
+ they belong to the genus Salmo.There is only one migratory Atlantic species but five existing 
+species of Pacific salmon: chinook (or king), sockeye (or red), coho (or silver), pink and chum. 
+Salmon flesh is typically pink but their colour can range from red to orange. The chinook and sockeye 
+varieties are fattier than pink and chum, favourites for steaks and fillets, while coho falls somewhere in the middle.
+ Pink salmon is primarily used for canned food. Chinook salmon are the largest and sockeye the smallest salmon.
+ Due to the various species parameters, cuts and fillet sizes are variable.");
+
+insert into groceryitems (name, category, description)
+values ("tuna", "fish",
+"Tuna fish is a very diverse saltwater fish that belongs to the Scombridae family,
+ commonly called the mackerel group However, tuna belongs to a tribe, called Thunnini.
+ This tribe contains 15 species of tuna, most of which are enjoyed around the world in culinary traditions.
+ This variety of fish are typically anywhere from 1 foot in length to 15 feet for a fully grown, long-lived example.
+ While most of these fish live for 3-5 years, some have been known to live for more than two decades. 
+They regularly make long migration across the oceans, sometimes thousands of miles in length, 
+due to mating and changing seasons.");
+
+insert into groceryitems (name, category, description)
+values ("mackerel", "fish",
+"Mackerel is a family of saltwater fish composed of over 30 different species, including popular varieties 
+like Atlantic mackerel, Pacific mackerel, Spanish mackerel and king mackerel fish. Available both fresh and canned,
+ mackerel is a favorite among fish lovers thanks to its versatility, flavor and incredible nutrient profile. Plus, 
+with some research indicating that regular consumption could help drop your blood pressure and cholesterol, minimize your
+ waistline, protect against depression, and keep your bones healthy and strong, mackerel fish definitely makes a great addition 
+to any healthy, well-balanced diet.");
+
+insert into groceryitems (name, category, description)
+values ("sardines", "fish",
+"Sardines (or pilchards) are small fish that grow up to a maximum of 25cm. Sardines have a strong flavour and are 
+oily and soft in texture They can be bought and prepared in various forms, altering the taste and texture greatly. 
+They are a popular seafood choice around the world. In India, they are typically eaten fresh and fried or made into curries,
+ while in the Philippines they are often eaten dried and dipped in vinegar or fresh and simmered in a spicy tomato sauce for
+ breakfast.While the main use of sardines is for human consumption they have many other uses. Sardines are used as fishing 
+bait as well as for fish meal used as animal feed. Sardine oil is used in margarine in Europe as well as for the manufacture of paint, 
+varnish and linoleum worldwide.");
+
+insert into groceryitems (name, category, description)
+values ("lettuce", "vegetables",
+"Salads are a favourite in our hot climate, being refreshing,
+ yet tasty and easy to prepare and lettuce is a popular in salads.
+ That's not suprising: not only does it taste good, it's nutritious too.
+ Just 100 gram of this vegetable gives you more Vitamin A than the same
+ amount of meat. Indeed this is just the right amount a child needs daily. 
+For the average adult, eat twice this amount and you will have enough Vitamin A 
+for the day. Lettuce is also quite rich in Vitamin C and B and is a good source 
+of essential minerals like calcium, phosphorus and iron. ");
+
+insert into groceryitems (name, category, description)
+values ("potatoes", "vegetables",
+"It is low in fat, high in fibre, rich in vitamins and minerals. A plain boiled 
+potato has only a few more calories than an apple, or equivalent to one third 
+bowl of rice, or one and half slices of bread. But only if it is cooked the right
+ way - more calories are added when you deep-fry it. The potato's moist and 
+starchy texture provides high bulk and satiety so that slimmers are less likely
+ to nibble more than they should. It makes good weaning food for your baby, being
+ soft and easily mashed for easy digestion. As for vitamin C, the potato is a 
+suprisingly rich source, and so make a suitable alternative when fresh fruits are
+ unavailable. But remember that the vitamin content varies with length of storage 
+and cooking method. So do 
+not store potatoes for too long as nutrients are at their maximum when fresh.");
+
+insert into groceryitems (name, category, description)
+values ("tomatoes", "vegetables",
+"The red juicy tomato is a vegetable but you are not alone if you have mistaken 
+it for a fruit. It was even called 'loved apple' once. This native of South America
+ grows wild on the slopes of the Andes - hence its name which is derived from the
+ Mexican Indian word tomatl. Soon after the Spaniards' conquest of Mexico, the 
+fruit was taken to Europe after 1532. In Italy it caught on so to become part of
+ the national diet.");
+
+insert into groceryitems (name, category, description)
+values ("carrots", "vegetables",
+"Rabbits have known for centuries that carrots do you good. 
+Eating them raw gives you the calcium, Vitanins A and C and fibre, 
+while the cruch tones and strengthens your gums. They make good snacks, 
+far more nutritious and less lethal than chocolates and sweets. Choose those not 
+longer than 6 inches and hard-the smaller the better and sweeter. The carrot has
+ been aroundnsince ancient times, originating from the Mediterranean, a 
+favourite with Romans. Eventually it was brought to China around 13th century
+ from West Asia to India from Persia.");
+
+insert into groceryitems (name, category, description)
+values ("chicken", "meats",
+"Gallus gallus, the scientific name for chicken, is easy to be bred 
+and relatively cheap. It is easily distinguishable, and can be prepared 
+as a entree, main meal and also as a side dish. Originated from India, 
+chickens are the most widely domesticated fowl in the world.");
+
+insert into groceryitems (name, category, description)
+values ("lamb", "meats",
+"Lamb is obtained from flesh of sheep, goat or similar,
+ that are below 1 year old.");
+
+insert into groceryitems (name, category, description)
+values ("rabbit", "meats",
+"Rabbits can be eaten. This information might seem foreign to you,
+ but rabbits (Leporidae) are very common as food in some parts of Europe,
+ and the US. It is also considered as a delicacy in France.");
+
+insert into groceryitems (name, category, description)
+values ("deer", "meats",
+"Deer (Cervidae) are said to be a high-quality food due to its nutrients. 
+An exotic meat, it is not a common food, yet still hunted for.");
+
+insert into groceryitems (name, category, description)
+values ("cilantro", "herbs",
+"Cilantro is a popular herb popular around the globe that resembles flat leaf 
+parsley at first glance, but at first sniff, transports you to the Mediterranean, 
+Mexico, Asia, and India. Cilantro gives a fresh boost of flavor, without the 
+addition of sea salt or other seasonings.This versatile herb is used in everything
+ from guacamole and salsa, to curries, noodle dishes, and chimichurri sauces of 
+Argentina. Not only does this flavorful, bright herb have unlimited culinary 
+applications, but surprisingly to many people cilantro benefits the body and 
+has many known healing properties.");
+
+insert into groceryitems (name, category, description)
+values ("cumin", "herbs",
+"Cumin is the dried seed of the herb Cuminum cyminum, a member of the parsley family. T
+he cumin plant grows to 30–50 cm (12–20 in) tall and is harvested by hand. It is an annual
+ herbaceous plant, with a slender, glabrous, branched stem that is 20–30 cm (8–12 in) tall and has
+ a diameter of 3–5 cm (​1 1⁄4–2 in). Each branch has two to three subbranches. All the branches attain
+ the same height, so the plant has a uniform canopy.The stem is coloured grey or dark green.");
+
+insert into groceryitems (name, category, description)
+values ("coriander", "herbs",
+"Coriander(Coriandrum sativum), also known as Chinese parsley, the stems and leaves 
+of which are usually called cilantro in North America, is an annual herb in the family Apiaceae.");
+
+insert into groceryitems (name, category, description)
+values ("cassia", "herbs",
+"Cinnamomum cassia, called Chinese cassia or Chinese cinnamon,
+ is an evergreen tree originating in southern China, and widely 
+cultivated there and elsewhere in southern and eastern Asia (India,
+ Indonesia, Laos, Malaysia, Taiwan, Thailand, and Vietnam).It is 
+one of several species of Cinnamomum used primarily for their aromatic 
+bark, which is used as a spice. In the United States, Chinese cassia is 
+the most common type of cinnamon used. The buds are also used as a spice,
+ especially in India, and were once used by the ancient Romans.");
