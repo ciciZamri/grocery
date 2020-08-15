@@ -70,7 +70,7 @@ with some research indicating that regular consumption could help drop your bloo
 to any healthy, well-balanced diet.");
 
 insert into groceryitems (name, category, description)
-values ("sardines", "fish",
+values ("sardine", "fish",
 "Sardines (or pilchards) are small fish that grow up to a maximum of 25cm. Sardines have a strong flavour and are 
 oily and soft in texture They can be bought and prepared in various forms, altering the taste and texture greatly. 
 They are a popular seafood choice around the world. In India, they are typically eaten fresh and fried or made into curries,
@@ -91,7 +91,7 @@ for the day. Lettuce is also quite rich in Vitamin C and B and is a good source
 of essential minerals like calcium, phosphorus and iron. ");
 
 insert into groceryitems (name, category, description)
-values ("potatoes", "vegetables",
+values ("potato", "vegetables",
 "It is low in fat, high in fibre, rich in vitamins and minerals. A plain boiled 
 potato has only a few more calories than an apple, or equivalent to one third 
 bowl of rice, or one and half slices of bread. But only if it is cooked the right
@@ -105,7 +105,7 @@ and cooking method. So do
 not store potatoes for too long as nutrients are at their maximum when fresh.");
 
 insert into groceryitems (name, category, description)
-values ("tomatoes", "vegetables",
+values ("tomato", "vegetables",
 "The red juicy tomato is a vegetable but you are not alone if you have mistaken 
 it for a fruit. It was even called 'loved apple' once. This native of South America
  grows wild on the slopes of the Andes - hence its name which is derived from the
@@ -114,7 +114,7 @@ fruit was taken to Europe after 1532. In Italy it caught on so to become part of
  the national diet.");
 
 insert into groceryitems (name, category, description)
-values ("carrots", "vegetables",
+values ("carrot", "vegetables",
 "Rabbits have known for centuries that carrots do you good. 
 Eating them raw gives you the calcium, Vitanins A and C and fibre, 
 while the cruch tones and strengthens your gums. They make good snacks, 
@@ -161,9 +161,9 @@ has many known healing properties.");
 insert into groceryitems (name, category, description)
 values ("cumin", "herbs",
 "Cumin is the dried seed of the herb Cuminum cyminum, a member of the parsley family. T
-he cumin plant grows to 30–50 cm (12–20 in) tall and is harvested by hand. It is an annual
- herbaceous plant, with a slender, glabrous, branched stem that is 20–30 cm (8–12 in) tall and has
- a diameter of 3–5 cm (​1 1⁄4–2 in). Each branch has two to three subbranches. All the branches attain
+he cumin plant grows to 30.50 cm (12.20 in) tall and is harvested by hand. It is an annual
+ herbaceous plant, with a slender, glabrous, branched stem that is 20.30 cm (8.12 in) tall and has
+ a diameter of 3.5 cm (4.2 in). Each branch has two to three subbranches. All the branches attain
  the same height, so the plant has a uniform canopy.The stem is coloured grey or dark green.");
 
 insert into groceryitems (name, category, description)

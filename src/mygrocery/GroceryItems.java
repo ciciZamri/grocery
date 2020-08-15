@@ -19,7 +19,7 @@ public class GroceryItems {
 			while(rs.next()) {
 				String item_name = rs.getString("name");
 				String description = rs.getString("description");
-				String image_filename = "images/" + "placeholder.png";
+				String image_filename = "images/" + item_name + ".png";
 				arr[0] = item_name;
 				arr[1] = description;
 				arr[2] = image_filename;
@@ -36,7 +36,7 @@ public class GroceryItems {
 		try {
 			while(rs.next()) {
 				String item_name = rs.getString("name");
-				String image_filename = "images/" + "placeholder.png";
+				String image_filename = "images/" + item_name + ".png";
 				String[] arr = {item_name, image_filename};
 				items.add(arr);
 			}

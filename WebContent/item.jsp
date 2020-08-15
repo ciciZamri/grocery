@@ -1,6 +1,5 @@
 <%@ include file="header.jsp" %>
 
-<h1>Item details</h1>
 <% String[] item = (String[])request.getAttribute("item"); %>
     <div>
     	<img alt="image" src="<%= item[2] %>">

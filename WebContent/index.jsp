@@ -1,7 +1,4 @@
 <%@ include file="header.jsp" %>
-
-
-
 <style media="screen">
 a{
 
@@ -31,12 +28,7 @@ a{
 </style>
 
 
-<%@ include file="footer.jsp" %>
-
 <img id="bg"src="images/grocery.jpg" alt="" >
-
-<h1>landing page</h1>
-   <h3>${name}</h3>
 
   <div class="wrapper">
 
@@ -49,3 +41,4 @@ a{
       </div>
 
   </div>
+<%@ include file="footer.jsp" %>
