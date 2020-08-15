@@ -20,7 +20,7 @@ public class Explore extends HttpServlet {
 		if (groceryitem != null) {
 			response.sendRedirect("/Grocery/item?item="+groceryitem);
 		} else if (category != null) {
-			request.setAttribute("items", groceryItems.getItems(category));
+			request.setAttribute("items", groceryItems.getItemsByCategory(category));
 			request.setAttribute("title", "Select item");
 			request.setAttribute("section", "groceryitem");
 			request.getRequestDispatcher("explore.jsp").forward(request, response);

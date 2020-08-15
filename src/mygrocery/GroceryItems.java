@@ -5,14 +5,32 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class GroceryItems {
-	String name;
-	String image_path;
-	String category;
-	String description;
+//	String name;
+//	String image_path;
+//	String category;
+//	String description;
 	
 	private DB db = new DB("grocery", "mysql", "mysql");
 	
-	public String[][] getItems(String category){
+	public String[] getItem(String itemName) {
+		ResultSet rs = db.execute("select * from groceryitems where name=\"" + itemName + "\"");
+		String[] arr = {"", "", ""};
+		try {
+			while(rs.next()) {
+				String item_name = rs.getString("name");
+				String description = rs.getString("description");
+				String image_filename = "images/" + "placeholder.png";
+				arr[0] = item_name;
+				arr[1] = description;
+				arr[2] = image_filename;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return arr;
+	}
+	
+	public String[][] getItemsByCategory(String category){
 		ResultSet rs = db.execute("select name from groceryitems where category=\"" + category + "\"");
 		ArrayList<String[]> items = new ArrayList<String[]>();
 		try {
