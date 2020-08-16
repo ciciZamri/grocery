@@ -33,7 +33,8 @@ public class Login extends HttpServlet {
 			}
 			HttpSession session = request.getSession(true);
 			session.setAttribute("is_logged_in", "true");
-			response.sendRedirect("/Grocery/grocerylist");
+			session.setAttribute("user_id", user_details[0]);
+			response.sendRedirect("/Grocery/grocerylist?action=view");
 		}
 	}
 }

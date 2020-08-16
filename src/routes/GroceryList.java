@@ -8,19 +8,45 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import mygrocery.MyGroceryList;
+
 @WebServlet("/grocerylist")
 public class GroceryList extends HttpServlet {
+	private MyGroceryList mylist = new MyGroceryList();
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("name", "hello");
-		String itemName = (String) request.getParameter("add");
 		HttpSession session = request.getSession(true);
-		String status = (String) session.getAttribute("is_logged_in");
-		if(status != null) {
-			request.getRequestDispatcher("grocerylist.jsp").forward(request, response);
-		}else {
+		Boolean is_logged_in = false;
+		if(session.getAttribute("is_logged_in") != null) {
+			is_logged_in = Boolean.parseBoolean((String) session.getAttribute("is_logged_in"));
+		}
+		if(is_logged_in) {
+			String action = (String) request.getParameter("action");
+			String user_id = (String) session.getAttribute("user_id");
+			System.out.println(user_id);
+			if(action.equals("view")) {
+				String[][] list = mylist.getMyList(user_id);
+				for(String[] l: list) {
+					System.out.println(l[0]);
+					System.out.println(l[1]);
+					System.out.println(l[2]);
+				}
+				request.setAttribute("items", list);
+				request.getRequestDispatcher("grocerylist.jsp").forward(request, response);
+			} else if(action.equals("add")) {
+				String item_name = request.getParameter("item");
+				System.out.println("add new " + item_name);
+			} else if(action.equals("delete")) {
+				String item_name = request.getParameter("item");
+				System.out.println("delete " + item_name);
+			} else if(action.equals("update")) {
+				String item_name = request.getParameter("item");
+				System.out.println("update " + item_name);
+			}
+		}else{
 			response.sendRedirect("/Grocery/login");
 		}
-		System.out.println(status);
+		System.out.println(is_logged_in);
 	}
 
 }

@@ -1,5 +1,13 @@
 <%@ include file="header.jsp" %>
-
+<style>
+img{
+	height: 300px;
+    width: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+</style>
 <% String[] item = (String[])request.getAttribute("item"); %>
     <div>
     	<img alt="image" src="<%= item[2] %>">

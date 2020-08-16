@@ -90,7 +90,7 @@ body{
 		</div>
 		<div>
 			<a href="explore">Explore</a>
-			<a href="grocerylist">My Grocery List</a>
+			<a href="grocerylist?action=view">My Grocery List</a>
 			<a href="about">About us</a>
 			<a href="login">Log in</a>
 		</div>

@@ -14,8 +14,8 @@ public class Item extends HttpServlet {
 	private GroceryItems groceryItems = new GroceryItems();
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String item = (String) request.getParameter("item");
-		String[] itemdetails = groceryItems.getItem(item);
+		String item_name = (String) request.getParameter("item");
+		String[] itemdetails = groceryItems.getItemByName(item_name);
 		request.setAttribute("item", itemdetails);
 		request.getRequestDispatcher("item.jsp").forward(request, response);
 	}

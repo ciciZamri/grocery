@@ -10,6 +10,10 @@ public class DB {
     private Statement stmt;
     private ResultSet rs;
     
+    public DB() {
+    	DB_URL = "jdbc:mysql://localhost/grocery?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    }
+    
     public DB(String databaseName, String username, String password) {
     	DB_URL = "jdbc:mysql://localhost/"+ databaseName + "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     	USER = username;
