@@ -18,7 +18,7 @@ public class GroceryList extends HttpServlet {
 		if(status != null) {
 			request.getRequestDispatcher("grocerylist.jsp").forward(request, response);
 		}else {
-			request.getRequestDispatcher("login.jsp").forward(request, response);
+			response.sendRedirect("/Grocery/login");
 		}
 		System.out.println(status);
 	}
