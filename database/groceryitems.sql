@@ -1,6 +1,5 @@
 create table groceryitems(
-	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	name VARCHAR(30) NOT NULL UNIQUE,
+	name VARCHAR(30) PRIMARY KEY,
 	category VARCHAR(30) NOT NULL,
 	description TEXT(20000) NOT NULL
 );

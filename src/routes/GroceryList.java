@@ -24,25 +24,21 @@ public class GroceryList extends HttpServlet {
 			String action = (String) request.getParameter("action");
 			String user_id = (String) session.getAttribute("user_id");
 			System.out.println(user_id);
-			if(action.equals("view")) {
-				String[][] list = mylist.getMyList(user_id);
-				for(String[] l: list) {
-					System.out.println(l[0]);
-					System.out.println(l[1]);
-					System.out.println(l[2]);
-				}
-				request.setAttribute("items", list);
-				request.getRequestDispatcher("grocerylist.jsp").forward(request, response);
-			} else if(action.equals("add")) {
+			if(action.equals("add")) {
 				String item_name = request.getParameter("item");
+				mylist.addTolist(user_id, item_name);
 				System.out.println("add new " + item_name);
 			} else if(action.equals("delete")) {
 				String item_name = request.getParameter("item");
+				mylist.deleteFromList(user_id, item_name);
 				System.out.println("delete " + item_name);
-			} else if(action.equals("update")) {
+			} else if(action.equals("edit")) {
 				String item_name = request.getParameter("item");
 				System.out.println("update " + item_name);
 			}
+			String[][] list = mylist.getMyList(user_id);
+			request.setAttribute("items", list);
+			request.getRequestDispatcher("grocerylist.jsp").forward(request, response);
 		}else{
 			response.sendRedirect("/Grocery/login");
 		}

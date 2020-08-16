@@ -12,6 +12,10 @@ body{
 	margin-right: 48px;
 }
 
+a{
+	text-decoration: none;
+}
+
 .error{
 	color: red;
 }
@@ -92,7 +96,14 @@ body{
 			<a href="explore">Explore</a>
 			<a href="grocerylist?action=view">My Grocery List</a>
 			<a href="about">About us</a>
-			<a href="login">Log in</a>
+			<%
+				String is_logged_in = (String)session.getAttribute("is_logged_in");
+				if(is_logged_in == null){
+					out.print("<a href=\"login\">Log in</a>");
+				}else{
+					out.print("<a href=\"logout\">Log out</a>");
+				}
+			%>
 		</div>
 	</div>
 </header>
