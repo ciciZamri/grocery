@@ -55,4 +55,9 @@ public class MyGroceryList {
 	public void deleteFromList(String user_id, String item_name) {
 		db.executeUpdate("delete from mygrocerylist where user_id=" + user_id + " and groceryitem_name=\"" + item_name + "\"");
 	}
+	
+	public void updateList(String user_id, String item_name, String notes) {
+		String sql = "update mygrocerylist set notes=\"" + notes + "\" where user_id=" + user_id + " and groceryitem_name=\"" + item_name + "\"";
+		db.executeUpdate(sql);
+	}
 }

@@ -32,9 +32,6 @@ public class GroceryList extends HttpServlet {
 				String item_name = request.getParameter("item");
 				mylist.deleteFromList(user_id, item_name);
 				System.out.println("delete " + item_name);
-			} else if(action.equals("edit")) {
-				String item_name = request.getParameter("item");
-				System.out.println("update " + item_name);
 			}
 			String[][] list = mylist.getMyList(user_id);
 			request.setAttribute("items", list);
@@ -43,6 +40,23 @@ public class GroceryList extends HttpServlet {
 			response.sendRedirect("/Grocery/login");
 		}
 		System.out.println(is_logged_in);
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String item_name = request.getParameter("item_name");
+		String notes = request.getParameter("notes");
+		String submit_value = request.getParameter("submit_value");
+		System.out.println(item_name + notes + submit_value);
+		if(submit_value.equals("cancel")) {
+			response.sendRedirect("/Grocery/grocerylist?action=view");
+		} else {
+			HttpSession session = request.getSession(true);
+			String user_id = (String) session.getAttribute("user_id");
+			mylist.updateList(user_id, item_name, notes);
+			String[][] list = mylist.getMyList(user_id);
+			request.setAttribute("items", list);
+			request.getRequestDispatcher("grocerylist.jsp").forward(request, response);
+		}
 	}
 
 }

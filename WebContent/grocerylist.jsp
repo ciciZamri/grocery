@@ -42,11 +42,13 @@ p, h3{
 
 .notes-form{
 	display: none;
-    padding: 28px;
+	position: absolute;
+    padding: 16px;
+    width: 392px;
+    border-radius: 7px;
     background-color: white;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    top: 48px;
-    left: 50%;
+    right: 140px;
 }
 
 .form-btn{
@@ -54,6 +56,11 @@ p, h3{
 	background-color: black;
 	color: white;
 	padding: 8px;
+	cursor: pointer;
+	transition:pointer;
+}
+.form-btn:hover{
+	background-color: grey;
 }
 
 .add-btn{
@@ -99,11 +106,12 @@ p, h3{
     	</svg></a>
 	</div>
 	<div class="notes-form notes-form-<%= items[i][0] %>">
-		<form action="grocerylist?action=edit?item=<%= items[i][0] %>">
+			<form action="grocerylist" method="post">
 			<h3>Additional Notes</h3>
-			<input type="textarea" name="notes">
-			<input class="form-btn" type="submit" value="confirm">
-			<input class="form-btn" type="submit" value="cancel">
+			<input type="hidden" name="item_name" value="<%= items[i][0] %>">
+			<input type="textarea" name="notes" style="width: 250px; height: 32px;">
+			<input class="form-btn" name="submit_value" type="submit" value="confirm">
+			<input class="form-btn" name="submit_value" type="submit" value="cancel">
 		</form>
 	</div>
 </div>
@@ -116,7 +124,6 @@ p, h3{
 </button></a>
 <script>
 	function showform(id){
-		alert(id);
 		document.querySelector(".notes-form-" + id).style.display = "block";
 	}
 </script>

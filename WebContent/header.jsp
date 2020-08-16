@@ -8,6 +8,10 @@
 <style>
 body{
 	font-family: sans-serif;
+	margin: 0px;
+}
+
+.body{
 	margin-left: 48px;
 	margin-right: 48px;
 }
@@ -23,7 +27,9 @@ a{
 .navbar{
 	display: flex;
 	justify-content: space-between;
-	margin: 16px 0px;
+	align-items: center;
+	padding: 22px 16px;
+	margin: 0;
 }
 
 .navbar a{
@@ -107,3 +113,4 @@ a{
 		</div>
 	</div>
 </header>
+<div class="body">
